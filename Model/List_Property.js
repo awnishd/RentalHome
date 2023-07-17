@@ -3,19 +3,18 @@ const mongoose = require('mongoose');
 // Define the property schema
 const propertySchema = new mongoose.Schema({
     ownerName: {
-        type: String,
-        required: true
+        type: String,    
     },
     mobileNumbers:
     {
         type: Number,
-        required: true
+        
     }
     ,
     emailAddresses:
     {
         type: String,
-        required: true
+        
     }
     ,
     //propertyBasics: {
@@ -37,23 +36,23 @@ const propertySchema = new mongoose.Schema({
         },
     //propertyPricing: {
         expectedRentPrice: {
-            type: Number,
+            type: String,
             
         },
         expectedSalePrice: {
-            type: Number,
+            type: String,
             
         },
         monthlyMaintenance: {
-            type: Number,
+            type: String,
             
         },
         builtUpArea: {
-            type: Number,
+            type: String,
            
         }
         , plotSize: {
-            type: Number,
+            type: String,
             
         },
         propertyImgName: {
