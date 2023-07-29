@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Define the property schema
-const propertySchema = new mongoose.Schema({
+const adminPropertySchema = new mongoose.Schema({
     ownerName: {
         type: String,    
     },
@@ -215,6 +215,6 @@ const propertySchema = new mongoose.Schema({
 });
 
 // Create the Property model
-const Property = mongoose.model('Property', propertySchema);
+const AdminProperty = mongoose.model('AdminProperty', adminPropertySchema);
 
-module.exports = Property;
+module.exports = AdminProperty;
